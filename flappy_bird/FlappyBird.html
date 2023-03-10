@@ -1,0 +1,111 @@
+<html lang="en" onclick="jump()">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="flappy-bird.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Hier staan de ID's van de elementen van het spel -->
+    <div id="game">
+        <div id="block"></div>
+        <div id="hole"></div>
+        <div id="character"></div>
+    </div>
+
+    <!-- Hier staat een tekst onder het spel -->
+    <div class="txt">
+        <p>Klik met je linkermuisknop om te springen.</p>
+        <img src="images/flappy-bird.png" alt="logoimg">
+    </div>
+
+    <!-- Hier staat de laatste score -->
+    <div class="containercenter">
+        <div id="data"></div>
+    </div>
+
+    <!-- Side Navbar -->
+    <div>
+        <!-- Dit stuk zorgt ervoor dat de Navbar opent als je erop klikt -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <!-- Deze button linkt naar de home page -->
+            <button style="--clr:#39FF14"><span><a href="../index.html">Home</a></span><i></i></button>
+            <p style="color:transparent;">Niets</p>
+
+            <!-- Deze button linkt naar de settings page -->
+            <div class="settings">
+                <button style="--clr:#0FF0FC"><span><a onclick="myFunction()"
+                            class="dropbtn">Settings</a></span><i></i></button>
+                <!-- Deze button linkt naar een dropdown waar je light/dark mode kan toggelen. -->
+                <div id="myDropdown" class="dropdown-content">
+                    <button style="--clr:#39FF14"><span><a onclick="darkmode()">Toggle licht/dark
+                                mode</a></span><i></i></button>
+                </div>
+            </div>
+
+            <!-- Deze button linkt naar de contact page -->
+            <button style="--clr:#8A2BE2"><span><a href="../contact.html">Contact</a></span><i></i></button>
+        </div>
+
+        <!-- Zorgt voor een zichtbare button waarop je kunt klikken -->
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navbar</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="row">
+            <div class="footer-col">
+                <h4>C-TABgames</h4>
+                <div>
+                    <a href="https://www.instagram.com/bdijkhuis26/"><img class="social-links"
+                            src="../foto/instagram.png" alt="insta" /></a>
+                    <a href="https://www.tiktok.com/@brunodijkhuis"><img class="social-links" src="../foto/tiktok.png"
+                            alt="tiktok" /></a>
+                    <a href="https://www.facebook.com/bruno.dijkhuis.5/"><img class="social-links"
+                            src="../foto/facebook.png" alt="facebook" /></a>
+                    <a href="https://www.youtube.com/channel/UC0egrJXUtm5U660hidh1Q2A"><img class="social-links"
+                            src="../foto/youtubelogo.png" alt="youtube" /></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>onze pagina's</h4>
+                <ul>
+                    <li><a href="../index.html">home</a></li> <!--Hier wordt gelinkt naar de homepage-->
+                    <li><a href="../contact.html">contact</a></li> <!--Hier wordt gelinkt naar de contact pagina-->
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>singleplayer games</h4>
+                <ul>
+                    <li><a href="../flappy_bird/FlappyBird.html">flappy_bird</a>
+                    </li><!--Hier wordt gelinkt naar flabby bird-->
+                    <li><a href="../dinogame/dinorun.html">dinorun</a></li>
+                    <!--Hier wordt gelinkt naar dinorun-->
+                    <li><a href="../snake/snake.html">snake</a></li>
+                    <!--Hier wordt gelinkt naar snake-->
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>multiplayer games</h4>
+                <ul>
+                    <li><a href="../tic-tac-toe/tic-tac-toe.html">tic-tac-toe</a></li>
+                    <!--Hier wordt gelinkt naar tic-tac-toe-->
+                    <li><a href="../memory/memory.html">memory</a></li>
+                    <!--Hier wordt gelinkt naar memory-->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hier is de javascript gelinkt -->
+    <script src="flappy-bird.js"></script>
+</body>
+
+
+</html>

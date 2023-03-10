@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="snakebody">
+        <div class="snakelogo">
+        <img src="img/snaketextlogo.png" alt="logo">
+    </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <!--hier word gelinkt naar de homepage-->
+            <button style="--clr:#39FF14"><span><a href="../index.html">home</a></span><i></i></button>
+            <p style="color:transparent;">niets</p>
+            <div class="settings">
+
+                <!-- met deze button open je de dropdown -->
+                <button style="--clr:#0FF0FC"><span><a onclick="myFunction()" class="dropbtn">settings</a></span><i></i></button>
+                
+                <div id="myDropdown" class="dropdown-content">
+                    <button style="--clr:#39FF14"><span><a onclick="darkmode()" style="color:white">Toggle licht/dark mode</a></span><i></i></button>
+                </div>
+            </div>
+           <br>
+
+            <!--hier word gelinkt naar de contact pagina-->
+            <button style="--clr:#8A2BE2"><span><a href="../contact.html">contact</a></span><i></i></button>
+        </div>
+        <div id="main">
+
+            <!--dit stukje code zorgt er voor dat je als op de navbar butten klikt dat je de navbar gaat zien-->
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; navbar</span>
+        </div>
+
+          <!--in deze div worden de game uitgelegt-->
+        <div class=info>
+            <p>gebruik wasd om zo veel mogelijk appels te pakken! </p>
+        </div>
+
+        <div class="snakeboard">
+        <canvas id="board"></canvas>
+        </div>
+        <br>
+        <br>
+        <div class="restartbutton">
+        <button style="--clr:#39FF14"><span><a onClick="window.location.reload();">opnieuw spelen</a></span><i></i></button>
+        </div>
+        <br>
+        
+        <!--De code hieronder is de code voor de footer-->
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="footer-col">
+                <h4>C-TABgames</h4>
+                <div>
+                    <a href="https://www.instagram.com/bdijkhuis26/"><img class="social-links" src="../foto/instagram.png" alt="insta"/></a>
+                    <a href="https://www.tiktok.com/@brunodijkhuis"><img class="social-links" src="../foto/tiktok.png" alt="tiktok"/></a>
+                    <a href="https://www.facebook.com/bruno.dijkhuis.5/"><img class="social-links" src="../foto/facebook.png" alt="facebook"/></a>
+                    <a href="https://www.youtube.com/channel/UC0egrJXUtm5U660hidh1Q2A"><img class="social-links" src="../foto/youtubelogo.png" alt="youtube"/></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>onze pagina's</h4>
+                <ul>
+
+                    <!--hier word gelinkt naar de homepage-->
+                    <li><a href="../index.html">home</a></li>
+                    
+                    <!--hier word gelinkt naar de contact pagina-->
+                    <li><a href="../contact.html">contact</a></li> 
+                </ul>
+            </div>
+            <div class="footer-col">
+
+                <!-- Hier linken we alle games in de footer -->
+                <h4>singleplayer games</h4>
+                <ul>
+                    <li><a href="../flappy_bird/FlappyBird.html">flappy_bird</a>
+                    </li>
+                    <li><a href="../dinogame/dinorun.html">dinorun</a></li>
+                    
+                    <li><a href="../snake/snake.html">snake</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>multiplayer games</h4>
+                <ul>
+                    <li><a href="../tic-tac-toe/tic-tac-toe.html">tic-tac-toe</a></li>
+                   
+                    <li><a href="../memory/memory.html">memory</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

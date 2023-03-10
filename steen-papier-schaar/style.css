@@ -1,0 +1,30 @@
+img {
+    width: 200px;
+    border: 2px;
+    border-style: solid;
+    margin: 10px;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-between;
+}
+.players{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-between;
+}
+#box1{
+    display: flex;
+}
+#box2{
+    display: none;
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

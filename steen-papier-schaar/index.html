@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Steen, Papier, Schaar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="foto/favicon.ico">
+</head>
+<body>
+<div class="container">
+    <div class="players">
+        <h1 id="player1"></h1>
+        <h1 id="player2"></h1>
+    </div>
+
+    <div id="box1">
+        <button onclick="choice1('Steen')"><img id="Steen"  src="img/rock.png" alt="Steen"   ></button>
+        <button onclick="choice1('Papier')"><img id="Papier" src="img/paper.png" alt="Papier" ></button>
+        <button onclick="choice1('Schaar')"><img id="Schaar" src="img/schaar.png" alt="Schaar" ></button>
+    </div>
+    <div id="box2">
+        <button onclick="choice2('Steen')"><img  src="img/rock.png" alt="Steen"   ></button>
+        <button onclick="choice2('Papier')"><img src="img/paper.png" alt="Papier" ></button>
+        <button onclick="choice2('Schaar')"><img src="img/schaar.png" alt="Schaar" ></button>
+    </div>
+
+    <div class="result">
+        <h2 id="result"></h2>
+    </div>
+</div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

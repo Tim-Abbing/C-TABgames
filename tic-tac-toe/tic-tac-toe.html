@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CTAB-games.nl</title>
+    <link rel="stylesheet" href="tictactoe.css">
+    <script src="tic-tac-toe.js"></script>
+    <script src="tictactoe.css"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+<!--side bar-->
+<div class="logoplace">
+ <img class="logo" src="tic-tac-toe.png" alt="tic-tac-toe">
+</div>
+
+    <div id="mySidenav" class="sidenav">
+        <!--dit stukje code zorgt er voor dat je als op de navbar butten klikt dat je de navbar gaat zien-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+        
+        <!--hier word gelinkt naar de homepage-->
+        <button style="--clr:#39FF14"><span><a href="../index.html">home</a></span><i></i></button>
+        <p style="color:transparent;">niets</p>
+        <div class="settings">
+            <button style="--clr:#0FF0FC"><span><a onclick="myFunction()"
+                        class="dropbtn">settings</a></span><i></i></button> <!-- met deze button open je de dropdown -->
+            <div id="myDropdown" class="dropdown-content">
+                <button style="--clr:#39FF14"><span><a onclick="darkmode()" style="color:white">Toggle licht/dark mode</a></span><i></i></button><!-- met deze button word de achtergrond veranderd -->
+            </div>
+        </div>
+        <p style="color:transparent;">niets</p>
+        <button style="--clr:#8A2BE2"><span><a href="../contact.html">contact</a></span><i></i></button><!--hier word gelinkt naar de contact pagina-->
+    </div>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; navbar</span> <!--met dit stuk code kan je de sidebar openen-->
+    </div>
+<!-- tic-tac-toe-->
+    <p>speel 1v1 tegen een vriend</p>
+    <div class='game'></div> 
+    <br>
+    <div class="restart">
+    <button onclick="tic_tac_toe.restart()" title="Restart this game" style="--clr:#0FF0FC"><span>Restart</span><i></i></button>
+</div> 
+<br>
+    <script src="tic-tac-toe.js"></script>
+    <script>
+        tic_tac_toe.init(document.querySelector('.game'));
+        tic_tac_toe.start();
+    </script>
+        <div class="footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>C-TABgames</h4>
+                    <div>
+                        <a href="https://www.instagram.com/bdijkhuis26/"><img class="social-links" src="../foto/instagram.png" alt="insta"/></a>
+                        <a href="https://www.tiktok.com/@brunodijkhuis"><img class="social-links" src="../foto/tiktok.png" alt="tiktok"/></a>
+                        <a href="https://www.facebook.com/bruno.dijkhuis.5/"><img class="social-links" src="../foto/facebook.png" alt="facebook"/></a>
+                        <a href="https://www.youtube.com/channel/UC0egrJXUtm5U660hidh1Q2A"><img class="social-links" src="../foto/youtubelogo.png" alt="youtube"/></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>onze pagina's</h4>
+                    <ul>
+                        <li><a href="../index.html">home</a></li> <!--hier word gelinkt naar de homepage-->
+                        <li><a href="../contact.html">contact</a></li> <!--hier word gelinkt naar de contact pagina-->
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>singleplayer games</h4>
+                    <ul>
+                        <li><a href="../flappy_bird/FlappyBird.html">flappy_bird</a>
+                        </li><!--hier word gelinkt naar flabby bird-->
+                        <li><a href="../dinogame/dinorun.html">dinorun</a></li>
+                        <!--hier word gelinkt naar dinorun-->
+                        <li><a href="../snake/snake.html">snake</a></li>
+                        <!--hier word gelinkt naar snake-->
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>multiplayer games</h4>
+                    <ul>
+                        <li><a href="../tic-tac-toe/tic-tac-toe.html">tic-tac-toe</a></li>
+                        <!--hier word gelinkt naar tic-tac-toe-->
+                        <li><a href="../memory/memory.html">memory</a></li>
+                        <!--hier word gelinkt naar memory-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+    </html>

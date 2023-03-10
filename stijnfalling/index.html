@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>stijnfalling</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="logoplace">
+        <img class="logo" src="stijnfalling logo.png" alt="stijnfalling">
+    </div>
+    <!-- dit is de sidenavbar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!--dit stukje code zorgt ervoor dat als je op de navbar button klikt dat je de navbar gaat zien-->
+        <button style="--clr:#39FF14"><span><a
+                    href="../index.html">home</a></span><i></i></button><!--hier word gelinkt naar de homepage-->
+        <p style="color:transparent;">niets</p>
+        <div class="settings">
+            <button style="--clr:#0FF0FC"><span><a onclick="myFunction()"
+                        class="dropbtn">settings</a></span><i></i></button> <!-- met deze button open je de dropdown -->
+            <div id="myDropdown" class="dropdown-content">
+                <button style="--clr:#39FF14"><span><a onclick="darkmode()" style="color:white">Toggle licht/dark
+                            mode</a></span><i></i></button><!-- met deze button word de achtergrond veranderd -->
+            </div>
+        </div>
+        <p style="color:transparent;">niets</p>
+        <button style="--clr:#8A2BE2"><span><a
+                    href="../contact.html">contact</a></span><i></i></button><!--hier word gelinkt naar de contact pagina-->
+    </div>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; navbar</span>
+    </div>
+    <div class="info">
+    <p>gebruik a en d of <- en -> om te kunnen bewegen</p>
+    </div>
+    <!-- container om het center te krijgen -->
+    <div class="container">
+        <div class="containercenter">
+            <div id="data"></div>
+        </div>
+        <!-- hier word de game van stijnfalling gelinkt -->
+        <div id="game">
+            <!-- hier is de character wat beweegt -->
+            <div id="character"></div>
+        </div>
+        <!-- dit is de reload button -->
+        <div class="containerbuttonreload">
+            <button onClick="window.location.reload();" style="--clr:#0FF0FC"><span><a>Opnieuw
+                        spelen</a></span><i></i></button>
+        </div>
+    </div>
+    <!-- dit is de footer -->
+    <div class="footer">
+        <div class="row">
+            <div class="footer-col">
+                <h4>C-TABgames</h4>
+                <div>
+                    <a href="https://www.instagram.com/bdijkhuis26/"><img class="social-links"
+                            src="../foto/instagram.png" alt="insta" /></a>
+                    <a href="https://www.tiktok.com/@brunodijkhuis"><img class="social-links" src="../foto/tiktok.png"
+                            alt="tiktok" /></a>
+                    <a href="https://www.facebook.com/bruno.dijkhuis.5/"><img class="social-links"
+                            src="../foto/facebook.png" alt="facebook" /></a>
+                    <a href="https://www.youtube.com/channel/UC0egrJXUtm5U660hidh1Q2A"><img class="social-links"
+                            src="../foto/youtubelogo.png" alt="youtube" /></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>onze pagina's</h4>
+                <ul>
+                    <!--hier word gelinkt naar de homepage-->
+                    <li><a href="../index.html">home</a></li> 
+                    <!--hier word gelinkt naar de contact pagina-->
+                    <li><a href="../contact.html">contact</a></li> 
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>singleplayer games</h4>
+                <ul>
+                    <li><a href="../flappy_bird/FlappyBird.html">flappy_bird</a>
+                    </li><!--hier word gelinkt naar flabby bird-->
+                    <li><a href="../dinogame/dinorun.html">dinorun</a></li>
+                    <!--hier word gelinkt naar dinorun-->
+                    <li><a href="../snake/snake.html">snake</a></li>
+                    <!--hier word gelinkt naar snake-->
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>multiplayer games</h4>
+                <ul>
+                    <li><a href="../tic-tac-toe/tic-tac-toe.html">tic-tac-toe</a></li>
+                    <!--hier word gelinkt naar tic-tac-toe-->
+                    <li><a href="../memory/memory.html">memory</a></li>
+                    <!--hier word gelinkt naar memory-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<!-- hier word de script.js gelinkt -->
+<script src="script.js"></script>
+
+</html>
